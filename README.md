@@ -26,7 +26,9 @@ Personal Finance Assistant is a application which will help the users to record 
 ### Installation
 
 Clone or download this github repository
+
 To clone, open your terminal and enter the following command
+
 $git clone https://github.com/minghan1219/PersonalFinanceAssistant
 
 Expenses requires Android OS version 5.0+ to run.
