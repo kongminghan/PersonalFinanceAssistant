@@ -29,8 +29,9 @@ Clone or download this github repository
 
 To clone, open your terminal and enter the following command
 
-$git clone https://github.com/minghan1219/PersonalFinanceAssistant
-
+```sh
+   $ git clone https://github.com/minghan1219/PersonalFinanceAssistant.git
+   ```
 Expenses requires Android OS version 5.0+ to run.
 
 Install the dependencies and wait for gradle to sync.
