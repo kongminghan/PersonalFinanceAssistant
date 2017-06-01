@@ -14,10 +14,10 @@ Personal Finance Assistant is a application which will help the users to record 
 
 ### Screenshots
 
-![Alt text](https://raw.github.com/minghan1219/PersonalFinanceAssistant/master/photos/1.png?raw=true "")
-![Alt text](https://raw.github.com/minghan1219/PersonalFinanceAssistant/master/photos/2.png?raw=true "")
-![Alt text](https://raw.github.com/minghan1219/PersonalFinanceAssistant/master/photos/3.png?raw=true "")
-![Alt text](https://raw.github.com/minghan1219/PersonalFinanceAssistant/master/photos/4.png?raw=true "")
+![Alt text](/photos/1.png?raw=true "")
+![Alt text](/photos/2.png?raw=true "")
+![Alt text](/photos/3.png?raw=true "")
+![Alt text](/photos/4.png?raw=true "")
 
 ### API Reference
 
