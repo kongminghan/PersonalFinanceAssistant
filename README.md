@@ -40,8 +40,8 @@ Install the dependencies and wait for gradle to sync.
 To run the app in Android emulator
 
 ```sh
-$ emulator -avd avd_name [ {-option [value]} … ]
-```
+  $ emulator -avd avd_name [ {-option [value]} … ]
+  ```
 
 
 License
