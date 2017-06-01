@@ -153,6 +153,7 @@ public class RVAdapterExpenses extends RecyclerView.Adapter<RVAdapterExpenses.My
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
+                        dialogEt.dismiss();
                         DatabaseReference databaseReference = database.getReference(FirebaseInstanceId.getInstance().getId() + "/expenses");
                         final DatabaseReference reference2 = database.getReference(FirebaseInstanceId.getInstance().getId() + "/amount");
                         reference2.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -179,6 +180,7 @@ public class RVAdapterExpenses extends RecyclerView.Adapter<RVAdapterExpenses.My
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
+                        dialogEt.dismiss();
                     }
                 });
                 alert.show();

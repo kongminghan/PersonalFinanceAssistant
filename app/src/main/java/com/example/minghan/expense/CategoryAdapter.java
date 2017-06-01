@@ -96,6 +96,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyView
                                 notifyItemRemoved(position);
                                 notifyDataSetChanged();
                                 dialog.dismiss();
+                                dialogEt.dismiss();
                             }
                         });
 
@@ -103,6 +104,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyView
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
+                                dialogEt.dismiss();
                             }
                         });
                         alert.show();

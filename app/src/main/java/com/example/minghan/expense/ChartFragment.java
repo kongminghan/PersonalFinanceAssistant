@@ -77,6 +77,7 @@ public class ChartFragment extends Fragment {
 
         final ArrayList<Expenses> expenses = new ArrayList<>();
         final ArrayList<String> labels = new ArrayList<>();
+        final ArrayList<String> tempLabels = new ArrayList<>();
         final List<BarEntry> entries = new ArrayList<>();
 
         ExpensesDB db = new ExpensesDB(getActivity());
@@ -92,20 +93,23 @@ public class ChartFragment extends Fragment {
             }while (cursor.moveToNext());
 
             for(int y=0; y < labels.size(); y++){
+                final int finalY = y;
+
                 Query reference = database.getReference(FirebaseInstanceId.getInstance().getId()+"/expenses")
                         .orderByChild("category").equalTo(labels.get(y));
 
-                final int finalY = y;
                 reference.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         expenses.clear();
                         double total = 0;
+                        Expenses history = new Expenses();
                         if (dataSnapshot != null && dataSnapshot.getValue() != null) {
                             for(DataSnapshot historySnapshot : dataSnapshot.getChildren()){
-                                Expenses history = historySnapshot.getValue(Expenses.class);
+                                history = historySnapshot.getValue(Expenses.class);
                                 total = total + history.getAmount();
                             }
+                            tempLabels.add(history.getCategory());
                             entries.add(new BarEntry(i[0], (float)total));
                             i[0]++;
 //                            Toast.makeText(getActivity(), labels.size()+"labels", Toast.LENGTH_SHORT).show();
@@ -117,7 +121,7 @@ public class ChartFragment extends Fragment {
                                 IAxisValueFormatter formatter = new IAxisValueFormatter() {
                                     @Override
                                     public String getFormattedValue(float value, AxisBase axis) {
-                                        return labels.get((int) value);
+                                        return tempLabels.get((int) value);
                                     }
                                 };
                                 XAxis xAxis = chart.getXAxis();
