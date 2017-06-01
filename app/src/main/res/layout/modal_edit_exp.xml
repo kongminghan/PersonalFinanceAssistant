@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="Update Expenses"
+        android:textSize="20sp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="12dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Menu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="12-12-2017"
+        android:textSize="19sp"
+        android:id="@+id/tvDate"
+        android:layout_margin="14dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@android:style/TextAppearance.Material.Menu" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_category"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:spinnerMode="dropdown"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="New Expenses"
+        android:inputType="numberDecimal"
+        android:letterSpacing=".04"
+        android:padding="12dp"
+        android:theme="@style/EditTextTheme" />
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="12dp"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="Enter your car plate number here (without space) and we'll find out your car parking fees."/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:elevation="1dp"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:id="@+id/btnDelete"/>
+
+        <Button
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:elevation="1dp"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:id="@+id/btnAdd"/>
+
+    </LinearLayout>
+
+</LinearLayout>

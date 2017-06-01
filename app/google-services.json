@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "396257471880",
+    "firebase_url": "https://expense-88cde.firebaseio.com",
+    "project_id": "expense-88cde",
+    "storage_bucket": "expense-88cde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396257471880:android:2653c5f02549cd37",
+        "android_client_info": {
+          "package_name": "com.example.minghan.expense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396257471880-vmdqco51hlar0tgl7rt446e1gcg0c1if.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.minghan.expense",
+            "certificate_hash": "71c366cdb30cf53525a32a0df75f5fc9dfb65385"
+          }
+        },
+        {
+          "client_id": "396257471880-ouofh7p860pnfaspd292hrdu91i2elp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACks_oRC7_BkgDdEnN13Y96SD-fYqfcHo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396257471880-ouofh7p860pnfaspd292hrdu91i2elp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
