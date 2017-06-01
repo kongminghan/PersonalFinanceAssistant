@@ -1,7 +1,7 @@
 # PersonalFinancialAssistant
 This is an expenses tracking application for Mobile Application Development course
 
-Personal Finance Assistant is a application which will help the users to record their expenses on day to day basics. The users can manage and view their expenses. The users also can create their custom category in order to manage their expenses. The application will generate chart to show the expenses statistics. 
+Personal Finance Assistant is a application which will help the users to record their expenses on day to day basics. The users can manage and view their expenses. The users also can create their custom category in order to manage their expenses. The application will generate chart to show the expenses statistics. The interface of this application is simple and easy to use.
 
 
 ### Modules
@@ -49,6 +49,6 @@ License
 
 MIT
 
-
+This code can be downloaded and copied with free of charge
 **Free Software, Oh Yeah!**
 
